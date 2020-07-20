@@ -117,6 +117,17 @@ img {
     border-bottom: 3px solid #3d3d3d;
 }
 
+/* Hide Content*/
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+.show{
+    display: block !important; 
+}
+
 .tabs .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -301,6 +312,9 @@ img {
     text-transform: uppercase;
 }
 
+.btn-icon {
+    margin-left: 1rem;
+}
 
 @media(max-width: 960px) {
     .showcase {
