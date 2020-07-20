@@ -1,5 +1,5 @@
-const tableItems = document.querySelectorAll('.tab-item');
-const tableContentItems = document.querySelectorAll('.tab-content-item');
+const tabItems = document.querySelectorAll('.tab-item');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
 
 function selectItem(e) {
     removeBorder();
@@ -13,11 +13,17 @@ function selectItem(e) {
 }
 
 function removeBorder() {
-    tableItems.forEach(item => item.classList.remove('tab-border'));
+    tabItems.forEach(item => {
+        item.classList.remove('tab-border')
+    });
 }
 function removeShow() {
-    tabContentItems.forEach(item => item.classList.remove('show'));
+    tabContentItems.forEach(item => {
+        item.classList.remove('show')
+    });
 }
 
 
-tableItems.forEach(item => item.addEventListener('click', selectItem));
+tabItems.forEach(item => {
+    item.addEventListener('click', selectItem)
+});
